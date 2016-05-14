@@ -20,9 +20,9 @@ recommend you download Hadoop version 1.2.1 from
 \url{http://apache.mirrors.tds.net/hadoop/common/hadoop-1.2.1/hadoop-1.2.1.tar.gz}
 
 2. After unzipping the folder, open \texttt{conf/hadoop-env.sh},
-find line 9 \#export JAVA\_HOME=/usr/lib/xxxx, and
-change it into export JAVA\_HOME=PATH\_TO\_YOUR\_JAVA\_HOME}. For Mac users, 
-your Java path is probably ``/Library/Java/Home``. For Linux users, look for
+find line 9 `#export JAVA\_HOME=/usr/lib/xxxx`, and
+change it into `export JAVA\_HOME=PATH\_TO\_YOUR\_JAVA\_HOME`. For Mac users, 
+your Java path is probably `/Library/Java/Home`. For Linux users, look for
 your java path under `/usr/lib/jvm/`.
 
 3. Hadoop provides three modes. To test the code, you can use the
@@ -35,7 +35,7 @@ please follow the instructions in the ``StandAlone Operation``
 section and make sure you can repeat the "grep example".
 
 5. To configure the Pseudo-Distributed Mode, please follow the
-"configuration" and ``Setup passpharaseless ssh''.
+`configuration` and `Setup passpharaseless ssh`.
 
 6. In the ``Execution'' step, notice there are extra steps:
 `$ bin/hadoop fs -put conf input`
@@ -44,9 +44,8 @@ This is because in Pseudo-Distributed mode, the hadoop
 program must read and write through HDFS (Hadoop Distributed File
 System).  
 
-
 You need to put the data files into HDFS. For
-example, the code 'KmeansMRDriver.py' assumes the data is in the location:
+example, the code `KmeansMRDriver.py` assumes the data is in the location:
 `hdfs:///user/yourusername/kmeans`. You can import your data
 into hdfs using the following commands:
 
@@ -60,7 +59,7 @@ the end
 #################################
 Part 2 Instructions for Starter Code
 #################################
-1. Download 'KmeansMapReduce'.
+1. Download `KmeansMapReduce`.
 2. Update the path for hadoop and the path to the kmeans data within HDFS
    in the KmeansMRDriver.py file.
 3. Run with  KmeansMRDriver.py
