@@ -35,7 +35,7 @@ please follow the instructions in the ``StandAlone Operation''
 section and make sure you can repeat the ``grep example''.
 
 5. To configure the Pseudo-Distributed Mode, please follow the
-``configuration'' and ``Setup passpharaseless ssh''.
+"configuration" and ``Setup passpharaseless ssh''.
 
 6. In the ``Execution'' step, notice there are extra steps:
 $ bin/hadoop fs -put conf input,
@@ -70,4 +70,4 @@ Instructions for Starter Code
 Remark: 
 Between runs of kmeans, you will need to
 remove the "kmeans/output" directory in hdfs:
-$ bin/hadoop fs -rmr kmeans/output
+ $ bin/hadoop fs -rmr kmeans/output
