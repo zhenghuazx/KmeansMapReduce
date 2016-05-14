@@ -38,8 +38,8 @@ section and make sure you can repeat the "grep example".
 "configuration" and ``Setup passpharaseless ssh''.
 
 6. In the ``Execution'' step, notice there are extra steps:
-$ bin/hadoop fs -put conf input,
-$ bin/hadoop fs -cat output/ 
+`$ bin/hadoop fs -put conf input`
+`$ bin/hadoop fs -cat output/`
 This is because in Pseudo-Distributed mode, the hadoop
 program must read and write through HDFS (Hadoop Distributed File
 System).  
@@ -47,16 +47,15 @@ System).
 
 You need to put the data files into HDFS. For
 example, the code 'KmeansMRDriver.py' assumes the data is in the location:
-hdfs:///user/yourusername/kmeans. You can import your data
+`hdfs:///user/yourusername/kmeans`. You can import your data
 into hdfs using the following commands:
 
-bin/hadoop fs -mkdir kmeans bin/hadoop fs -put /PATH/TO/DATA/smallwiki/tfidf.txt kmeans/tfidf.txt 
-bin/hadoop fs -put /PATH/TO/DATA/smallwiki/dictionary.txt kmeans/dictionary.txt
-bin/hadoop fs -mkdir kmeans/cluster0 bin/hadoop fs -put /PATH/TO/DATA/smallwiki/cluster0.txt kmeans/cluster0/cluster0.txt
+`$ bin/hadoop fs -mkdir kmeans bin/hadoop fs -put /PATH/TO/DATA/smallwiki/tfidf.txt kmeans/tfidf.txt `
+`$ bin/hadoop fs -put /PATH/TO/DATA/smallwiki/dictionary.txt kmeans/dictionary.txt`
+`$ bin/hadoop fs -mkdir kmeans/cluster0 bin/hadoop fs -put /PATH/TO/DATA/smallwiki/cluster0.txt kmeans/cluster0/cluster0.txt`
 
 7. Follow the instructions in the `Pseudo-Distributed Mode` section, and make sure you can repeat the `grep example` at
 the end
-
 
 #################################
 Instructions for Starter Code
@@ -69,4 +68,4 @@ Instructions for Starter Code
 Remark: 
 Between runs of kmeans, you will need to
 remove the "kmeans/output" directory in hdfs:
- $ bin/hadoop fs -rmr kmeans/output
+`$ bin/hadoop fs -rmr kmeans/output`
