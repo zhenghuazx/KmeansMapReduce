@@ -22,8 +22,8 @@ recommend you download Hadoop version 1.2.1 from
 2. After unzipping the folder, open \texttt{conf/hadoop-env.sh},
 find line 9 \#export JAVA\_HOME=/usr/lib/xxxx, and
 change it into export JAVA\_HOME=PATH\_TO\_YOUR\_JAVA\_HOME}. For Mac users, 
-your Java path is probably ``/Library/Java/Home''. For Linux users, look for
-your java path under ``/usr/lib/jvm/''.
+your Java path is probably ``/Library/Java/Home``. For Linux users, look for
+your java path under `/usr/lib/jvm/`.
 
 3. Hadoop provides three modes. To test the code, you can use the
 Pseudo-Distributed Mode. Pseudo-Distributed mode runs on a single
@@ -31,8 +31,8 @@ machine but simulates a distributed computing environment. If you
 have a cluster hdfs, then ignore this.
 
 4.Before you proceed to setup the Pseudo-Distributed mode,
-please follow the instructions in the ``StandAlone Operation''
-section and make sure you can repeat the ``grep example''.
+please follow the instructions in the ``StandAlone Operation``
+section and make sure you can repeat the "grep example".
 
 5. To configure the Pseudo-Distributed Mode, please follow the
 "configuration" and ``Setup passpharaseless ssh''.
