@@ -54,8 +54,7 @@ bin/hadoop fs -mkdir kmeans bin/hadoop fs -put /PATH/TO/DATA/smallwiki/tfidf.txt
 bin/hadoop fs -put /PATH/TO/DATA/smallwiki/dictionary.txt kmeans/dictionary.txt
 bin/hadoop fs -mkdir kmeans/cluster0 bin/hadoop fs -put /PATH/TO/DATA/smallwiki/cluster0.txt kmeans/cluster0/cluster0.txt
 
-7. Follow the instructions in the ``Pseudo-Distributed
-Mode'' section, and make sure you can repeat the ``grep example'' at
+7. Follow the instructions in the `Pseudo-Distributed Mode` section, and make sure you can repeat the `grep example` at
 the end
 
 
