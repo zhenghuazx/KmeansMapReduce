@@ -1,6 +1,6 @@
 # KmeansMapReduce
 #################################
-Instructions for Hadoop Setup
+Part 1 Instructions for Hadoop Setup
 #################################
 If you already set up Hadoop, feel free to skip
 this section as we do not require using the specific version or
@@ -58,7 +58,7 @@ into hdfs using the following commands:
 the end
 
 #################################
-Instructions for Starter Code
+Part 2 Instructions for Starter Code
 #################################
 1. Download 'KmeansMapReduce'.
 2. Update the path for hadoop and the path to the kmeans data within HDFS
